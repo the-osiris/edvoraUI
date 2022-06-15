@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Bar.css";
+import PositionedMenu from "./PositionedMenu";
 
 class Bar extends React.Component {
   // console.log(props);
@@ -44,11 +45,12 @@ class Bar extends React.Component {
         </div>
         <div className="filter">
           <span class="material-symbols-outlined">sort</span>
-          <button className="btn" onClick={this.onButtonClick4}>
+          <PositionedMenu />
+          {/* <button className="btn" onClick={this.onButtonClick4}>
             Filter
-          </button>
+          </button> */}
           <div className="filter_container">
-            <span>Filter</span>
+            <span>{/* <PositionedMenu /> */}</span>
             <hr></hr>
             <button className="btn filter_btn">State</button>
             <br />

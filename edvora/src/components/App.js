@@ -25,7 +25,7 @@ const App = () => {
     const currentTime = new Date().getTime();
     resp.data.map((val) => {
       if (new Date(val.date).getTime() === currentTime) val.flag = 0;
-      else if (new Date(val.date).getTime() > currentTime) val.flag = 1;
+      else if (new Date(val.date).getTime() > currentTime) val.flag = 56212;
       else val.flag = -1;
     });
     setRides(resp.data);
